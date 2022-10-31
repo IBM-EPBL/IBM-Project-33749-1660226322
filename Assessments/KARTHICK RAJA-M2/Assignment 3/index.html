@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Home page</title>
+  </head>
+  <body>
+    <h1 class="title">IBM Assignment 3</h1>
+    <div class="grid">
+      <img
+        src="https://ibm-jishnu.s3.jp-tok.cloud-object-storage.appdomain.cloud/images/782497.jpg"
+        alt=""
+        srcset=""
+        class="images"
+      />
+      <img
+      src=https://ibm-jishnu.s3.jp-tok.cloud-object-storage.appdomain.cloud/images/Abstract1.jpg
+      alt="" srcset="" class = "images" />
+      <img
+        src="https://ibm-jishnu.s3.jp-tok.cloud-object-storage.appdomain.cloud/images/Abstract2.jpg"
+        alt=""
+        srcset=""
+        class="images"
+      />
+      <img
+        src="https://ibm-jishnu.s3.jp-tok.cloud-object-storage.appdomain.cloud/images/Default.jpg"
+        alt=""
+        srcset=""
+        class="images"
+      />
+      <img
+        src="https://ibm-jishnu.s3.jp-tok.cloud-object-storage.appdomain.cloud/images/Sunrise.jpg"
+        alt=""
+        srcset=""
+        class="images"
+      />
+    </div>
+
+    <div class="chat-app"></div>
+  </body>
+  <script>
+    window.watsonAssistantChatOptions = {
+      integrationID: "15d0367f-f510-4d35-998b-ca0e24a4070c", // The ID of this integration.
+      region: "eu-gb", // The region your integration is hosted in.
+      serviceInstanceID: "d197c862-fd71-4ee6-8bc5-56a181b69fb3", // The ID of your service instance.
+      onLoad: function (instance) {
+        instance.render();
+      },
+    };
+    setTimeout(function () {
+      const t = document.createElement("script");
+      t.src =
+        "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" +
+        (window.watsonAssistantChatOptions.clientVersion || "latest") +
+        "/WatsonAssistantChatEntry.js";
+      document.head.appendChild(t);
+    });
+  </script>
+</html>
