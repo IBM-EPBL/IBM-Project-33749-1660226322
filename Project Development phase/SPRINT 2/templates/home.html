@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% block head %}
+    <title>Home</title>
+{% endblock %}
+
+{% block body %} 
+
+{{msg}}
+
+{{session["name"]}}
+
+    <!-- Blur -->
+    <!-- <section style="margin-top: 50px;">
+          <div class="mask d-flex align-items-center h-100">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-xl-8 mb-4">
+                  <div class="card mask-custom custom-1 py-5 px-4 text-white" style="height: 350px;">
+                    <div class="card-body d-flex align-items-center justify-content-center">
+                        <h1>Inventory Management System for Retailers</h1>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-xl-2">
+                  <div class="card mask-custom custom-2 py-5 px-4 text-white" style="height: 150px;">
+                    <div class="card-body d-flex align-items-center justify-content-center">
+                      <p class="h6 mb-0 text-dark">Blur: 60px</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-2">
+                  <div class="card mask-custom custom-3 py-5 px-4 text-white" style="height: 150px;">
+                    <div class="card-body d-flex align-items-center justify-content-center">
+                      <p class="h6 mb-0 text-dark">Blur: 40px</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-2">
+                  <div class="card mask-custom custom-4 py-5 px-4 text-white" style="height: 150px;">
+                    <div class="card-body d-flex align-items-center justify-content-center">
+                      <p class="h6 mb-0 text-dark">Blur: 15px</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-2">
+                  <div class="card mask-custom custom-5 py-5 px-4 text-white" style="height: 150px;">
+                    <div class="card-body d-flex align-items-center justify-content-center">
+                      <p class="h6 mb-0 text-dark">Blur: 5px</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+     
+      </section> -->
+
+{% endblock %}
